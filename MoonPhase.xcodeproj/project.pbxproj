@@ -7,19 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F124EA1C2B1616EC0086EAE0 /* ViewSelectorSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F124EA1B2B1616EC0086EAE0 /* ViewSelectorSlider.swift */; };
 		F1C8DD422B14B47E0019531A /* MoonPhaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C8DD412B14B47E0019531A /* MoonPhaseApp.swift */; };
 		F1C8DD442B14B47E0019531A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C8DD432B14B47E0019531A /* ContentView.swift */; };
 		F1C8DD462B14B4800019531A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1C8DD452B14B4800019531A /* Assets.xcassets */; };
 		F1C8DD492B14B4800019531A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1C8DD482B14B4800019531A /* Preview Assets.xcassets */; };
-		F1C8DD512B14B5130019531A /* MoonKit in Frameworks */ = {isa = PBXBuildFile; productRef = F1C8DD502B14B5130019531A /* MoonKit */; };
+		F1C8DD532B14B7190019531A /* PlanetSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C8DD522B14B7190019531A /* PlanetSceneView.swift */; };
+		F1CCC6EC2B15DA3B008F6851 /* Moon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CCC6EB2B15DA3B008F6851 /* Moon.swift */; };
+		F1E1EEFF2B173863005C9CE6 /* SolarSystemPlanetScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E1EEFE2B173863005C9CE6 /* SolarSystemPlanetScene.swift */; };
+		F1E1EF012B173892005C9CE6 /* SolarSystemCameraScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E1EF002B173892005C9CE6 /* SolarSystemCameraScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F124EA1B2B1616EC0086EAE0 /* ViewSelectorSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSelectorSlider.swift; sourceTree = "<group>"; };
 		F1C8DD3E2B14B47E0019531A /* MoonPhase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoonPhase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1C8DD412B14B47E0019531A /* MoonPhaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonPhaseApp.swift; sourceTree = "<group>"; };
 		F1C8DD432B14B47E0019531A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F1C8DD452B14B4800019531A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1C8DD482B14B4800019531A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F1C8DD522B14B7190019531A /* PlanetSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetSceneView.swift; sourceTree = "<group>"; };
+		F1CCC6EB2B15DA3B008F6851 /* Moon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moon.swift; sourceTree = "<group>"; };
+		F1E1EEFE2B173863005C9CE6 /* SolarSystemPlanetScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemPlanetScene.swift; sourceTree = "<group>"; };
+		F1E1EF002B173892005C9CE6 /* SolarSystemCameraScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemCameraScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,7 +36,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1C8DD512B14B5130019531A /* MoonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +61,9 @@
 		F1C8DD402B14B47E0019531A /* MoonPhase */ = {
 			isa = PBXGroup;
 			children = (
+				F1E1EF052B17393A005C9CE6 /* CustomViews */,
+				F1E1EF022B1738D3005C9CE6 /* PlanetSceneKit */,
+				F1CCC6EA2B15DA2A008F6851 /* MoonKit */,
 				F1C8DD412B14B47E0019531A /* MoonPhaseApp.swift */,
 				F1C8DD432B14B47E0019531A /* ContentView.swift */,
 				F1C8DD452B14B4800019531A /* Assets.xcassets */,
@@ -67,6 +78,32 @@
 				F1C8DD482B14B4800019531A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F1CCC6EA2B15DA2A008F6851 /* MoonKit */ = {
+			isa = PBXGroup;
+			children = (
+				F1CCC6EB2B15DA3B008F6851 /* Moon.swift */,
+			);
+			path = MoonKit;
+			sourceTree = "<group>";
+		};
+		F1E1EF022B1738D3005C9CE6 /* PlanetSceneKit */ = {
+			isa = PBXGroup;
+			children = (
+				F1C8DD522B14B7190019531A /* PlanetSceneView.swift */,
+				F1E1EEFE2B173863005C9CE6 /* SolarSystemPlanetScene.swift */,
+				F1E1EF002B173892005C9CE6 /* SolarSystemCameraScene.swift */,
+			);
+			path = PlanetSceneKit;
+			sourceTree = "<group>";
+		};
+		F1E1EF052B17393A005C9CE6 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				F124EA1B2B1616EC0086EAE0 /* ViewSelectorSlider.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,7 +123,6 @@
 			);
 			name = MoonPhase;
 			packageProductDependencies = (
-				F1C8DD502B14B5130019531A /* MoonKit */,
 			);
 			productName = MoonPhase;
 			productReference = F1C8DD3E2B14B47E0019531A /* MoonPhase.app */;
@@ -117,7 +153,6 @@
 			);
 			mainGroup = F1C8DD352B14B47E0019531A;
 			packageReferences = (
-				F1C8DD4F2B14B5130019531A /* XCRemoteSwiftPackageReference "MoonKit" */,
 			);
 			productRefGroup = F1C8DD3F2B14B47E0019531A /* Products */;
 			projectDirPath = "";
@@ -145,8 +180,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F124EA1C2B1616EC0086EAE0 /* ViewSelectorSlider.swift in Sources */,
+				F1E1EF012B173892005C9CE6 /* SolarSystemCameraScene.swift in Sources */,
 				F1C8DD442B14B47E0019531A /* ContentView.swift in Sources */,
 				F1C8DD422B14B47E0019531A /* MoonPhaseApp.swift in Sources */,
+				F1CCC6EC2B15DA3B008F6851 /* Moon.swift in Sources */,
+				F1C8DD532B14B7190019531A /* PlanetSceneView.swift in Sources */,
+				F1E1EEFF2B173863005C9CE6 /* SolarSystemPlanetScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,8 +326,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,8 +355,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -352,25 +392,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		F1C8DD4F2B14B5130019531A /* XCRemoteSwiftPackageReference "MoonKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/thejohnlima/MoonKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.5;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		F1C8DD502B14B5130019531A /* MoonKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F1C8DD4F2B14B5130019531A /* XCRemoteSwiftPackageReference "MoonKit" */;
-			productName = MoonKit;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F1C8DD362B14B47E0019531A /* Project object */;
 }
