@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SceneKit
+import SlingshotMultipleValueToggle
 
 struct ContentView: View {
   
